@@ -37,12 +37,37 @@ Example
 filter_list([1,2,'a','b']) == [1,2]
 filter_list([1,'a','b',0,15]) == [1,0,15]
 filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+// */
+
+// function filter_list(l) {
+//     return ( l.filter( (i) => typeof i !== 'string' && i >= 0 ))
+// }
+
+
+// //   filter_list([1,'a','b',0,15])
+//      console.log(filter_list([1,2,'aasf','1','123',123]))
+
+
+/* Disemvowel Trolls
+Trolls are attacking your comment section!
+
+A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+Note: for this kata y isn't considered a vowel.
 */
 
-function filter_list(l) {
-    return ( l.filter( (i) => typeof i !== 'string' && i >= 0 ))
-}
 
+function disemvowel(str) {
 
-//   filter_list([1,'a','b',0,15])
-     console.log(filter_list([1,2,'aasf','1','123',123]))
+    return (str.replace(/[aeiouAEIOU]/g, ''))
+    // str = str.replaceAll('a', '').replaceAll('e', '').replaceAll('i','').replaceAll('o', '').replaceAll('u','')
+    // str = str.replaceAll('A', '').replaceAll('E', '').replaceAll('I','').replaceAll('O', '').replaceAll('U','')
+    // return str
+  }
+  
+
+  console.log(disemvowel("This website is for losers LOL!"))
