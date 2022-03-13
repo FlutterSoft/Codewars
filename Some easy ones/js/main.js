@@ -61,13 +61,94 @@ Note: for this kata y isn't considered a vowel.
 */
 
 
-function disemvowel(str) {
+// function disemvowel(str) {
 
-    return (str.replace(/[aeiouAEIOU]/g, ''))
-    // str = str.replaceAll('a', '').replaceAll('e', '').replaceAll('i','').replaceAll('o', '').replaceAll('u','')
-    // str = str.replaceAll('A', '').replaceAll('E', '').replaceAll('I','').replaceAll('O', '').replaceAll('U','')
-    // return str
-  }
+//     return (str.replace(/[aeiouAEIOU]/g, ''))
+//     // str = str.replaceAll('a', '').replaceAll('e', '').replaceAll('i','').replaceAll('o', '').replaceAll('u','')
+//     // str = str.replaceAll('A', '').replaceAll('E', '').replaceAll('I','').replaceAll('O', '').replaceAll('U','')
+//     // return str
+//   }
   
 
-  console.log(disemvowel("This website is for losers LOL!"))
+//   console.log(disemvowel("This website is for losers LOL!"))
+
+
+
+
+// function findShort(s){
+//   const arr = s.split(' ')
+//   const shortest = arr.reduce( (a, b) => {
+//     return (a.length <= b.length ? a : b)
+//   })
+//   return shortest.length
+// }
+
+// console.log(findShort("hey how are you going today mr man?"))
+
+
+// beginner series #3 sum of numbers
+/*
+Given two integers a and b, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return a or b.
+
+Note: a and b are not ordered!
+
+Examples (a, b) --> output (explanation)
+(1, 0) --> 1 (1 + 0 = 1)
+(1, 2) --> 3 (1 + 2 = 3)
+(0, 1) --> 1 (0 + 1 = 1)
+(1, 1) --> 1 (1 since both are same)
+(-1, 0) --> -1 (-1 + 0 = -1)
+(-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
+*/
+
+
+// function getSum( a,b ){
+//   let temp = a
+//   if (b < a){
+//     a = b
+//     b = temp
+//   }
+//   {
+//     let sum = 0
+//     for (let i = a; i <= b; i++){
+//       sum += i
+//     }
+//     return sum
+//   }
+// }
+
+
+/* Credit Card Mask
+Usually when you buy something, you're asked whether your credit card number, phone number or answer to your most secret question is still correct. However, since someone could look over your shoulder, you don't want that shown on your screen. Instead, we mask it.
+
+Your task is to write a function maskify, which changes all but the last four characters into '#'.
+
+Examples
+maskify("4556364607935616") == "############5616"
+maskify(     "64607935616") ==      "#######5616"
+maskify(               "1") ==                "1"
+maskify(                "") ==                 ""
+
+// "What was the name of your first pet?"
+maskify("Skippy")                                   == "##ippy"
+maskify("Nananananananananananananananana Batman!") == "####################################man!"
+*/
+
+// return masked string
+function maskify(cc) {
+  if (cc.length <= 4){
+    return cc
+  }
+  else {
+    const arr = cc.split('')
+    const lastFour = arr.slice(-4)
+    for (let i = 0; i < arr.length; i++){
+      arr[i] = '#'
+    }
+    arr.splice(-4, 4, lastFour.join(''))
+    return arr.join('')
+  }
+}
+
+console.log(maskify("123456"))
+
