@@ -73,7 +73,6 @@ Note: for this kata y isn't considered a vowel.
 //   console.log(disemvowel("This website is for losers LOL!"))
 
 
-<<<<<<< Updated upstream
 
 
 // function findShort(s){
@@ -134,7 +133,7 @@ maskify(                "") ==                 ""
 maskify("Skippy")                                   == "##ippy"
 maskify("Nananananananananananananananana Batman!") == "####################################man!"
 */
-
+/*
 // return masked string
 function maskify(cc) {
   if (cc.length <= 4){
@@ -165,6 +164,7 @@ For example:
 
 "Example Input" ==> "iNPUT eXAMPLE"
 */
+/*
 function stringTransformer(str) {
   // Your code here
   let string = str.split('')
@@ -181,4 +181,61 @@ function stringTransformer(str) {
   return arr.join(' ')
 }
 console.log(stringTransformer('Example string'))
->>>>>>> Stashed changes
+*/
+
+/*
+FRIEND OR FOE
+Make a program that filters a list of strings and returns a list with only your friends name in it.
+
+If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
+
+Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
+
+i.e.
+
+friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
+Note: keep the original order of the names in the output.
+*/
+// function friend(friends){
+//   //your code here
+//   let friendArr = friends.filter( (friend) => friend.length == 4)
+//   return friendArr
+// }
+
+// console.log(friend(["Ryan", "Kieran", "Mark"]))
+
+// Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+// For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
+
+// function squareSum(numbers){
+//   if (numbers.length === 0){
+//     return 0
+//   }
+//   else {
+//     return (numbers.reduce( (acc, cur) => {
+//       return acc + cur*cur
+
+//   },0))
+//   } 
+// }
+// // function squareSum(numbers){
+// //   let sum = 0
+// //   for(let i = 0; i < numbers.length; i++){
+// //     sum += (numbers[i] * numbers[i])
+// //   }
+// //   return sum
+// // }
+// console.log(squareSum([-19,3,-18,0,2,17,-20,-12]))
+
+function countSheeps(arrayOfSheep) {
+  let count = arrayOfSheep.filter( sheep => sheep === true)
+  return count.length
+}
+
+console.log(countSheeps([true,  true,  true,  false,
+  true,  true,  true,  true ,
+  true,  false, true,  false,
+  true,  false, false, true ,
+  true,  true,  true,  true ,
+  false, false, true,  true]))
