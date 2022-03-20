@@ -337,19 +337,48 @@ Examples (input --> output)
 //   }
 // }
 
-function breakChocolate(n,m) {
+// function breakChocolate(n,m) {
 
-  return (n <= 0 || m <= 0) ? 0 : (n*m - 1)
-}
+//   return (n <= 0 || m <= 0) ? 0 : (n*m - 1)
+// }
 
-console.log(breakChocolate(5,5))
+// console.log(breakChocolate(5,5))
 
 
-function breakChocolate(n,m) {
-  if (n <= 0 || m <= 0){
-    return 0
-  }
-  else {
-    return (n*m - 1)
-  }
-}
+// function breakChocolate(n,m) {
+//   if (n <= 0 || m <= 0){
+//     return 0
+//   }
+//   else {
+//     return (n*m - 1)
+//   }
+// }
+
+/*
+Replace With Alphabet Position
+Welcome.
+
+In this kata you are required to, given a string, replace every letter with its position in the alphabet.
+
+If anything in the text isn't a letter, ignore it and don't return it.
+
+"a" = 1, "b" = 2, etc.
+
+Example
+alphabetPosition("The sunset sets at twelve o' clock.")
+Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11" ( as a string )
+*/
+
+// function alphabetPosition(text) {
+//   let textLower = text.toLowerCase()
+//   let arr = textLower.split(' ').join('').split('')
+//   let answer = []
+//   for(let i = 0; i < arr.length; i++){
+//     if (arr[i].charCodeAt(0) >= 97 && arr[i].charCodeAt(0) <= 122 ){
+//       answer.push(arr[i].charCodeAt(0) - 96) 
+//     }
+//   }
+//   return(answer.join(' '))
+// }
+
+// console.log(alphabetPosition("a The sunset sets at twelve o' clock."))
