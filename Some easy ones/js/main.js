@@ -394,25 +394,46 @@ For example (Input --> Output):
 4 --> 0 (because 4 is already a one-digit number)
 */
 
-function persistence(num) {
-  //code me
-  let nums = Array.from(num.toString()).map(Number)
-  let sum = nums.reduce( (a,b) => (a * b), 1)
-  let answer = 1
+// function persistence(num) {
+//   //code me
+//   let nums = Array.from(num.toString()).map(Number)
+//   let sum = nums.reduce( (a,b) => (a * b), 1)
+//   let answer = 1
 
-  if (num < 10){
-    return 0
+//   if (num < 10){
+//     return 0
+//   }
+
+//   while (sum > 9){
+//     nums = Array.from(sum.toString()).map(Number)
+//     sum = nums.reduce( (a,b) => (a * b), 1)
+//     answer ++
+//   }
+
+//   return answer
+// }
+
+// console.log(persistence(999))
+
+// length of the number - 
+// function century(year) {
+//   let len = year.toString().length-2
+//   let cent = year.toString().slice(0, -len)
+//   return (Number(cent) + 1)
+// }
+
+function century(year) {
+  // let len = year.toString().length-2
+  let cent = (year / 100)
+  if (year % 100 == 0){
+    console.log('yo')
+    return (Math.floor(cent))
+    
   }
-
-  while (sum > 9){
-    nums = Array.from(sum.toString()).map(Number)
-    sum = nums.reduce( (a,b) => (a * b), 1)
-    answer ++
+  else {
+    return (Math.floor(cent) +1)
   }
-
-  return answer
 }
 
-console.log(persistence(999))
 
-
+console.log(century(1901))
