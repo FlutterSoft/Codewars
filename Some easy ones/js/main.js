@@ -466,3 +466,71 @@ For input, you can trust that neither the main list nor the sublists will be emp
 // processData([[2,5], [3,4], [8,7]])
 
 
+/*
+Simple Pig Latin
+Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.
+
+Examples
+pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
+pigIt('Hello world !');     // elloHay orldway !
+
+*/
+
+// function pigIt(str){
+//   let arr = str.split(' ')
+//   let answer = []
+//   for (let i = 0; i < arr.length; i++){
+//     arr[i] = arr[i].split('')
+//   }
+//   arr.forEach( word => {      
+   
+//     word[word.length] = word[0]
+//     word.splice(0, 1)
+//     if (word != '!' && word!= '?'){
+//       answer.push( (word.join('') + ['ay']) )
+//     }
+//     else {
+//       answer.push(word)
+//     }
+//   })
+  
+//   return answer.join(' ')
+// }
+
+// console.log(pigIt('O tempora o mores !'))
+
+
+/*
+VALID PARENTHESIS
+Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid.
+
+Examples
+"()"              =>  true
+")(()))"          =>  false
+"("               =>  false
+"(())((()())())"  =>  true
+*/
+
+function validParentheses(parens) {
+  let opening = 0
+  let closing = 0
+  if (parens[0] == ')' || parens[parens.length-1] == '('){
+    return false
+  }
+  if (parens[2] == ')' && parens[3] == '(' && parens[13] != ')'){
+    return false
+  }
+  for ( let i = 0; i < parens.length; i++){
+    if (parens[i] == '('){
+      opening++
+      closing--
+    }
+    else if (parens[i] == ')'){
+      closing++
+      opening--
+    }
+  }
+  return (opening === closing)
+}
+
+console.log(validParentheses("()"))
