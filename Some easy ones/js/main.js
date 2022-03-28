@@ -552,7 +552,7 @@ cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flo
 
 */
 
-
+/*
 function cakes(recipe, available) {
   let recipePossible = true
   let batches = 0
@@ -583,3 +583,95 @@ function cakes(recipe, available) {
 }
 
 console.log(cakes({flour: 500, sugar: 200, eggs: 1}, {flour: 200, sugar: 1200, eggs: 3, milk: 200}))
+*/
+
+// function dotCalculator (equation) {
+// 	let arr = equation.split(' ')
+//   let answer = []
+//   let len
+//   if (arr[1] == '+'){
+//     len = arr[0].length + arr[2].length
+//   }
+//   else if (arr[1] == '-'){
+//     len = arr[0].length - arr[2].length
+//   }
+//   else if (arr[1] == '//'){
+//     len = Math.floor(arr[0].length / arr[2].length)
+//   }
+//   else if (arr[1] == '*'){
+//     len = arr[0].length * arr[2].length
+//   }
+//   for (let i = 0; i < len; i++){
+//     answer.push('.')
+//   }
+//   return (answer.join(''))
+// }
+
+// console.log(dotCalculator("..... // .."))
+
+// Number of People in the Bus
+
+
+// var number = function(busStops){
+//   let count = 0 
+//   busStops.forEach ( stop => {
+//     count += stop[0]
+//     count -= stop[1]
+//   })
+//   return count
+// }
+// clever ---->   const number = (busStops) => busStops.reduce((rem, [on, off]) => rem + on - off, 0);
+
+// console.log(number([[10,0],[3,5],[5,8]]))
+
+/*]Snail Sort
+
+Given an n x n array, return the array elements arranged from outermost elements to the middle element, traveling clockwise.
+
+array = [[1,2,3],
+         [4,5,6],
+         [7,8,9]]
+snail(array) #=> [1,2,3,6,9,8,7,4,5]
+For better understanding, please follow the numbers of the next array consecutively:
+
+array = [[1,2,3],
+         [8,9,4],
+         [7,6,5]]
+snail(array) #=> [1,2,3,4,5,6,7,8,9]
+*/
+
+snail = function(array) {
+  let arr = []
+  let count = 0
+  let maxCount = array.length*array.length
+  console.log(maxCount)
+  let len = array[0].length
+  
+  // while (count < maxCount){
+    for (let i = 0; i < len; i++){
+      arr.push(array[0][i])
+      count++
+    }
+    for (let i = 1; i < len; i++){
+      arr.push(array[i][len-1])
+      count++
+    }
+    for (let i = len-2; i >= 0; i--){
+      arr.push(array[len-1][i])
+      count++
+    }
+    for (let i = len-2; i >= 1; i--){
+      arr.push(array[i][0])
+      count++
+    }    
+  // }
+
+  return arr
+}
+
+console.log(snail([
+  [1, 2, 3, 4, 5], 
+  [6, 7, 8, 9, 10], 
+  [11, 12, 13, 14, 15], 
+  [16, 17, 18, 19, 20], 
+  [21, 22, 23, 24, 25]]))
