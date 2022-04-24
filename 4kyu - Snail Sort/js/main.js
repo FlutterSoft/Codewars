@@ -3,9 +3,10 @@
 
 Given an n x n array, return the array elements arranged from outermost elements to the middle element, traveling clockwise.
 
-array = [[1,2,3],
-         [4,5,6],
-         [7,8,9]]
+array = [[1,2,3,7,8],
+         [4,5,6,9,10],
+         [7,8,9,11,2],
+         [13,14,15,16,17]]
 snail(array) #=> [1,2,3,6,9,8,7,4,5]
 For better understanding, please follow the numbers of the next array consecutively:
 
