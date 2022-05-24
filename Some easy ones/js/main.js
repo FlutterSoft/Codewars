@@ -624,21 +624,36 @@ console.log(cakes({flour: 500, sugar: 200, eggs: 1}, {flour: 200, sugar: 1200, e
 
 // console.log(number([[10,0],[3,5],[5,8]]))
 
-function findMissingLetter(array){
-  const lowerArray = array.join('').toLowerCase()
-  const alphabet = 'abcdefghijklmnopqrstuvwxyz'
-  let start = alphabet.indexOf(lowerArray[0])
-  for (let i = 0; i < lowerArray.length; i++){
-    if (lowerArray[i] != alphabet[i+start]){
-      if (array[0] == array[0].toUpperCase()){
-        return (alphabet[i+start].toUpperCase())
-      }
-      else {
-        return (alphabet[i+start])
+// function findMissingLetter(array){
+//   const lowerArray = array.join('').toLowerCase()
+//   const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+//   let start = alphabet.indexOf(lowerArray[0])
+//   for (let i = 0; i < lowerArray.length; i++){
+//     if (lowerArray[i] != alphabet[i+start]){
+//       if (array[0] == array[0].toUpperCase()){
+//         return (alphabet[i+start].toUpperCase())
+//       }
+//       else {
+//         return (alphabet[i+start])
 
-      }
-    }
-  }
-}
+//       }
+//     }
+//   }
+// }
 
-console.log(findMissingLetter('abcdefgi'))
+// console.log(findMissingLetter('abcdefgi'))
+
+
+// function saleHotdogs(n){
+//   let price
+//   if(n < 5){
+//     price = 100
+//   }
+//   else if(n < 10){
+//     price = 95
+//   }
+//   else {
+//     price = 90
+//   }
+//   return n*price
+// }
