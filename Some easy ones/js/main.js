@@ -682,8 +682,29 @@ Pay attention to the data types.
 If the initial velocity is non-positive, the return value should be 0
 */
 
-function sakuraFall(v) {
-  const branchHeight = 400
-  let result = branchHeight/v
-  return v <= 0 ? 0 : result > 0 ? result : 0
+// function sakuraFall(v) {
+//   const branchHeight = 400
+//   let result = branchHeight/v
+//   return v <= 0 ? 0 : result > 0 ? result : 0
+// }
+
+
+/*Define a card suit
+function defineSuit(card) {
+  switch(card[card.length-1]){
+      case "♣":
+      return 'clubs'
+      break;
+      case "♦":
+      return 'diamonds'
+      break;
+      case "♥":
+      return 'hearts'
+      break;
+      case "♠":
+      return 'spades'
+      break;         
+  }
 }
+  
+*/
