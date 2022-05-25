@@ -708,3 +708,14 @@ function defineSuit(card) {
 }
   
 */
+
+
+// function toFreud(string) {
+//   let words = string.split(' ')
+//   if(!string){
+//     return ''
+//   }
+//   else{
+//   return words.map( word => "sex").join(' ')    
+//   }
+// }
