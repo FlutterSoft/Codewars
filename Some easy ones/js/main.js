@@ -657,3 +657,11 @@ console.log(cakes({flour: 500, sugar: 200, eggs: 1}, {flour: 200, sugar: 1200, e
 //   }
 //   return n*price
 // }
+
+// function animal(obj){
+//   return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`
+// }
+
+// function sayHello( name, city, state ) {
+//   return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+//   }
