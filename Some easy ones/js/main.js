@@ -719,3 +719,14 @@ function defineSuit(card) {
 //   return words.map( word => "sex").join(' ')    
 //   }
 // }
+
+/* Name on billboard
+function billboard(name, price = 30){
+  let len = name.length
+  let sum = 0
+  for(let i = 0; i < len; i++){
+    sum += price
+  }
+  return sum
+} 
+*/
