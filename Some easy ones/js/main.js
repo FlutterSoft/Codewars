@@ -730,3 +730,11 @@ function billboard(name, price = 30){
   return sum
 } 
 */
+
+/*
+Sum of differences in array 
+function sumOfDifferences(arr) {
+  arr.sort( (a, b) => b-a)
+  return arr.length == 0 ? 0 : arr[0] - arr[arr.length-1]
+}
+*/
