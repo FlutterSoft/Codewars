@@ -738,3 +738,12 @@ function sumOfDifferences(arr) {
   return arr.length == 0 ? 0 : arr[0] - arr[arr.length-1]
 }
 */
+
+/*
+
+Exclamation marks series #2: Remove all exclamation marks from the end of sentence
+
+function remove (string) {  
+  return string.replace(/!*$/g, '')
+}
+*/
