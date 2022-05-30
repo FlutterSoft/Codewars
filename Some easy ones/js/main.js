@@ -747,3 +747,16 @@ function remove (string) {
   return string.replace(/!*$/g, '')
 }
 */
+
+/*
+Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right
+
+function remove(s,n){
+  let result = s
+  for(let i = 0; i < n; i++){
+    result = result.replace('!', '')
+  }
+  return result
+}
+
+*/
