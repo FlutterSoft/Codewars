@@ -817,3 +817,23 @@ function whatday(num) {
   }
 }
 */
+
+/*
+Find the perfect square
+
+function findNextSquare(sq) {
+  // Return the next square if sq is a perfect square, -1 otherwise
+  let next = 0
+  let counter = sq
+  if (Number.isInteger(Math.sqrt(sq))){
+    while(next == 0){
+      counter++
+      if(Number.isInteger(Math.sqrt(counter))){
+        next = counter
+        return counter
+      }
+    }
+  }
+  return -1;
+}
+*/
