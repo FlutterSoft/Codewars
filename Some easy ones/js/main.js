@@ -837,3 +837,16 @@ function findNextSquare(sq) {
   return -1;
 }
 */
+
+// Flatten and sort an array
+/*
+"use strict";
+
+function flattenAndSort(array) {
+  const result = []
+  for(let i = 0; i < array.length; i++){
+    array[i].forEach( el => result.push(el))
+  }
+  return result.sort( (a,b) => a-b );
+}
+*/
