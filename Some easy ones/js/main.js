@@ -850,3 +850,25 @@ function flattenAndSort(array) {
   return result.sort( (a,b) => a-b );
 }
 */
+
+/*
+Count the digit
+
+
+function nbDig(n, d) {
+    const sqrs = []
+    let count = 0
+    for(let k = 0; k <= n; k++){
+      sqrs.push( (k*k) + '')
+    }
+    for(let i = 0; i <= n; i++){
+      for(let j = 0; j < sqrs[i].length; j++){
+        if(sqrs[i][j] == d){
+          count++
+        }
+      }
+    }
+    return count
+}
+
+*/
