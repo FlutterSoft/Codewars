@@ -872,3 +872,31 @@ function nbDig(n, d) {
 }
 
 */
+
+/*
+Maximum Length Difference
+
+function mxdiflg(a1, a2) {
+  const a1Lens = a1.map( str => str.length)
+  const a2Lens = a2.map( str => str.length)
+  const a1Max = Math.max(...a1Lens)
+  const a2Max = Math.max(...a2Lens)
+  const a1Min = Math.min(...a1Lens)
+  const a2Min = Math.min(...a2Lens) 
+  
+  if(a1.length == 0 || a2.length == 0){
+    return -1
+  }
+  
+  return Math.max(a1Max - a2Min, a2Max - a1Min)
+}
+  
+*/
+
+/*
+Predict Your Age
+function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
+  let sums = [age1,age2,age3,age4,age5,age6,age7,age8].reduce( (acc, cur) => acc + cur*cur, 0)
+  return Math.floor(Math.sqrt(sums)/2)
+}
+*/
