@@ -900,3 +900,18 @@ function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
   return Math.floor(Math.sqrt(sums)/2)
 }
 */
+
+/*
+Get number from string
+function getNumberFromString(s) {
+  console.log(s)
+  return Number(s.replace(/[^\d]/g, ''));
+}
+*/
+
+/* 
+Find nearest square
+function nearestSq(n){
+  return Math.pow(Math.round(Math.sqrt(n)), 2)
+}
+*/
