@@ -915,3 +915,19 @@ function nearestSq(n){
   return Math.pow(Math.round(Math.sqrt(n)), 2)
 }
 */
+
+/*
+Who ate the cookie
+function cookie(x){
+  if(typeof(x) == "string"){
+    return "Who ate the last cookie? It was Zach!"
+  }
+  else if(typeof(x) == "number"){
+    return "Who ate the last cookie? It was Monica!"
+  }
+  else{
+    return "Who ate the last cookie? It was the dog!"
+  }
+}
+
+*/
