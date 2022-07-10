@@ -954,3 +954,12 @@ class Cat extends Animal {
 }
   
 */
+
+/*
+Even numbers in an array
+
+function evenNumbers(array, number) {
+  const evens = array.filter( num => num % 2 === 0)
+  return evens.splice(-number)
+}
+*/
