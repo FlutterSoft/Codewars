@@ -963,3 +963,24 @@ function evenNumbers(array, number) {
   return evens.splice(-number)
 }
 */
+/*
+Largest pair sum in array
+
+function largestPairSum (numbers) {
+  numbers.sort( (a,b) => a-b)
+  return numbers[numbers.length-1] + numbers[numbers.length-2]
+}
+
+*/
+/*
+Halving sum
+function halvingSum(n) {
+  let sum = n
+    for(let i = 2; Math.floor(n/i) >= 1; i*=2){
+      sum += Math.floor(n/i)
+    }
+  return sum
+}
+
+*/
+
