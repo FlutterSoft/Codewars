@@ -984,3 +984,43 @@ function halvingSum(n) {
 
 */
 
+/*
+
+Alphabet war
+
+function alphabetWar(fight){
+  let left = 0
+  let right = 0
+  const leftPowers = {
+    "w" : 4,
+    "p" : 3,
+    "b" : 2,
+    "s" : 1,
+  }
+  const rightPowers = {
+    "m" : 4,
+    "q" : 3,
+    "d" : 2,
+    "z" : 1,
+  }
+  
+    for(let i = 0; i < fight.length; i++){
+      if(fight[i] in leftPowers){
+         left += leftPowers[fight[i]]
+      } 
+      else if(fight[i] in rightPowers){
+         right += rightPowers[fight[i]]
+      }    
+    }
+
+  if(left>right){
+    return "Left side wins!"
+  }
+  else if(right>left){
+    return "Right side wins!"
+  }
+  else{
+    return "Let's fight again!"
+  }
+}
+*/
