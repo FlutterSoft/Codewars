@@ -1040,7 +1040,18 @@ function rowWeights(array){
   for(let i = 0; i < array.length; i++){
     i % 2 === 0 ? t1.push(array[i]) : t2.push(array[i])
   }
-  return [t1.reduce( (acc, sum) => acc + sum, 0), t2.reduce( (acc, sum) => acc + sum, 0)]
-  
+  return [t1.reduce( (acc, cur) => acc + cur, 0), t2.reduce( (acc, cur) => acc + cur, 0)]
 }
+*/
+
+/*
+7 kyu Gauß needs help! (Sums of a lot of numbers).
+
+function f(n){
+  let total = 0
+  for(let i = 0; i <= n; i++){
+    total += i
+  }
+  return n > 0 && n % 1 == 0 ? total : false
+};
 */
