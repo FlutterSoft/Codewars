@@ -1031,3 +1031,16 @@ function multiply(number){
 }
 
 */
+/*
+Row Weights
+
+function rowWeights(array){
+  let t1 = []
+  let t2 = []
+  for(let i = 0; i < array.length; i++){
+    i % 2 === 0 ? t1.push(array[i]) : t2.push(array[i])
+  }
+  return [t1.reduce( (acc, sum) => acc + sum, 0), t2.reduce( (acc, sum) => acc + sum, 0)]
+  
+}
+*/
