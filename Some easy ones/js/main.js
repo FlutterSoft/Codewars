@@ -1024,3 +1024,10 @@ function alphabetWar(fight){
   }
 }
 */
+/*
+function multiply(number){
+  let len = Math.abs(number).toString().length
+  return number * Math.pow(5, len)
+}
+
+*/
