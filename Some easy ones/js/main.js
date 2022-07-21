@@ -1055,3 +1055,14 @@ function f(n){
   return n > 0 && n % 1 == 0 ? total : false
 };
 */
+
+/*
+Sum of Cubes
+function sumCubes(n){
+  let sum = 0
+  for(let i = 0; i <= n; i++){
+    sum += Math.pow(i, 3)
+  }
+  return sum
+}
+*/
