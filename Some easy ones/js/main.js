@@ -1066,3 +1066,24 @@ function sumCubes(n){
   return sum
 }
 */
+
+/*
+Digitize
+
+function digitize(n) {
+  return n.toString().split('').map( num => Number(num))
+}
+*/
+
+/*
+Unlucky Days
+function unluckyDays(year){
+  let friThirts = 0
+  for (let m = 0; m < 12; m++) {
+    if (new Date(year, m, 12).getDay() === 4) {
+      friThirts++
+    }
+  }
+  return friThirts
+}
+*/
