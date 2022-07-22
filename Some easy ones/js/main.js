@@ -1087,3 +1087,26 @@ function unluckyDays(year){
   return friThirts
 }
 */
+
+
+/*
+16+18=214
+
+function add(num1, num2) {
+  let result = ''
+  let temp1 = ''
+  let temp2 = ''
+  let n1 = Math.max(num1, num2).toString().split('')
+  let n2 = Math.min(num1, num2).toString().split('')
+  while(n1.length > 0){
+    let cur1 = Number(n1.pop())
+    let cur2 = Number(n2.pop())
+    console.log(cur1, cur2)
+    cur2 > 0 ? temp1 = cur1 + cur2 : temp1 = cur1
+    temp2 = result
+    result = temp1 + temp2
+  }
+  return Number(result)
+}
+
+*/
