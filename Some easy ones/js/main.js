@@ -1124,3 +1124,17 @@ class Person {
   
 }
 */
+
+/*
+Drying Potatoes
+function potatoes(p0, w0, p1) {
+
+    P - ints in (percentage, weight, percentage)
+    R - int out (truncated/rounded)
+    E - 99, 100, 98  - output 50 
+    P - w0 * 100-p0  / 100-p1 
+  
+    return Math.floor( w0 * (100 - p0) / (100 - p1))
+  }
+  
+*/
