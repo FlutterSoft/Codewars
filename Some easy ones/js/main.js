@@ -1164,6 +1164,11 @@ function closeCompare(a, b, margin=0){
   return a < b ? -1 : 1
 }
 
+*/
 
-
+/*
+Type of sum
+function typeOfSum(a, b) {
+  return typeof(a+b)
+}
 */
