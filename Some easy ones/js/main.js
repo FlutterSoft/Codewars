@@ -1138,3 +1138,19 @@ function potatoes(p0, w0, p1) {
   }
   
 */
+
+/*
+easy logs
+function logs(x , a, b){
+  return (Math.log(a) + Math.log(b)) / Math.log(x)
+}
+*/
+
+/*
+Closest Elevator
+function elevator(left, right, call){
+  let lDistance = Math.abs(call - left)
+  let rDistance = Math.abs(call - right)
+  return lDistance < rDistance ? "left" : "right"
+}
+*/
