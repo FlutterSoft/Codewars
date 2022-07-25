@@ -1170,5 +1170,12 @@ function closeCompare(a, b, margin=0){
 Type of sum
 function typeOfSum(a, b) {
   return typeof(a+b)
+} 
+*/
+
+/*
+Grasshopper order of operations
+function orderOperations () {
+  return (2 + 2) * (2 + 2) * 2
 }
 */
