@@ -1179,3 +1179,14 @@ function orderOperations () {
   return (2 + 2) * (2 + 2) * 2
 }
 */
+
+/*
+Power
+function numberToPower(number, power){
+  let sum = 1
+  for(let i = 1; i <= power; i++){
+    sum *= number
+  }
+  return sum
+}
+*/
