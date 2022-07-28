@@ -1190,3 +1190,55 @@ function numberToPower(number, power){
   return sum
 }
 */
+
+
+/*
+Grasshopper - bug squashing
+
+var health = 100
+var position = 0
+var coins = 0
+
+function main () {
+  rollDice()
+  move()
+  combat()
+  getCoins()
+  buyHealth()
+  printStatus()
+
+}
+*/
+
+/*
+Sort the gift code
+function sortGiftCode(code){
+  return code.split('').sort().join('')
+}
+*/
+
+/*
+Palindrome Chain Length
+
+var palindromeChainLength = function(n) {
+  /*
+  P - int in only
+  R - return a digit that is the number of steps needed
+  E - (818) => 0,   (87) => 4 - 87 plus 78 = 165 + 561 = 726 + 627 = 1353 + 3531 = 4884
+  */
+  // declare count variable for eventual return
+  // declare sum variable (from n) for keeping sum of digits
+  // create a while loop and while current doesn't equal the reverse 
+  // reverse current sum and add to sum 
+  // increment sum
+  /*
+  let count = 0
+  let sum = n
+  while(sum != Number(sum.toString().split('').reverse().join(''))){
+    sum += Number(sum.toString().split('').reverse().join(''))  
+    count++
+  }
+  return count
+};
+*/
+
