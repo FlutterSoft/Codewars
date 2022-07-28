@@ -1242,3 +1242,14 @@ var palindromeChainLength = function(n) {
 };
 */
 
+
+/*
+Currying functions: multiply all elements in an array
+
+
+let multiplyAll = (arr) =>
+    int =>
+      arr.map( x => x*int)
+
+
+*/
