@@ -1253,3 +1253,39 @@ let multiplyAll = (arr) =>
 
 
 */
+
+/*
+Basic Sequence Practise
+function sumOfN(n) {
+  let x = 0
+  let arr = []
+  if (n > 0){
+    for(let i = 1; i < n+2; i++){
+      arr.push(x)
+      x += i
+    }
+  }
+  if (n < 0){
+    for(let i = -1; i > n-2; i--){
+      arr.push(x)
+      x += i
+    }
+  } 
+  if(n == 0){
+    return [0]
+  }
+  return arr
+};
+*/
+
+/*
+String from a hash
+
+function solution(pairs){
+  let string = ''
+  for (const [key, value] of Object.entries(pairs)) {
+    string += `${key} = ${value},`
+  }
+  return string.slice(0, -1)
+}
+*/
