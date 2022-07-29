@@ -1289,3 +1289,25 @@ function solution(pairs){
   return string.slice(0, -1)
 }
 */
+
+/*
+Flatten
+var flatten = function (array){
+  return [].concat(...array)
+}
+*/
+
+/*
+Alphabetical Addition
+function addLetters(...letters) {
+  const nums = letters.map( l => l.charCodeAt() - 96) 
+  let sum = nums.reduce( (acc, cur) => acc + cur, 0)
+  if(sum > 26){
+    sum = sum % 26
+  }
+  if(sum == 0 || letters.length == 0){
+    return 'z'
+  }
+  return String.fromCharCode(sum+96)
+}
+*/
