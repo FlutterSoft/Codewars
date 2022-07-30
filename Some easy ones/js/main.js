@@ -1323,3 +1323,41 @@ function averages(numbers) {
   return avs  
 }
 */
+
+/*
+Filter the numbers
+
+var FilterString = function(value) {
+  let nums = value.split('').filter( x => Number(x) == x)
+  return Number(nums.join(''))
+}
+*/
+
+/*
+Switcheroo
+function switcheroo(x){
+  let swaps = {"a": "b", "b": "a", "c": "c"}
+  return x.replace(/[abc]/g, letter => swaps[letter])
+}
+*/
+
+/*
+Caffeine Script
+function caffeineBuzz(n){
+  n = Math.abs(n)
+  let string = ''
+  let script = n % 2 == 0 ? "Script" : ""
+  for(let i = 0; i < n; i++){
+    if(n % 3 == 0 && n % 4 == 0){
+      string = "Coffee" + script
+    }
+    else if(n % 3 == 0){
+      string = "Java" + script
+    }
+    else{
+      string = "mocha_missing!"
+    }
+  }
+  return string
+}
+*/
