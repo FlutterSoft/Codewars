@@ -1311,3 +1311,15 @@ function addLetters(...letters) {
   return String.fromCharCode(sum+96)
 }
 */
+
+/*
+Averages of Numbers
+function averages(numbers) {
+  if(!numbers || numbers.length < 2){
+    return []
+  }
+  let avs = numbers.map( (n, i) => (n + numbers[i+1]) / 2)
+  avs.pop()
+  return avs  
+}
+*/
