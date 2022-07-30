@@ -1361,3 +1361,68 @@ function caffeineBuzz(n){
   return string
 }
 */
+
+
+/*
+Char Code Calculation
+function calc(x){
+  let total1 = x.split('').reduce( (acc, cur) => acc += cur.charCodeAt(), '' ) // split string to array, create string with charCodes
+  let total2 = total1.replace(/7/g, 1) // replace all digit 7 with digit 1
+  total1 = total1.split('').reduce( (acc, cur) => acc+Number(cur),0) // combine total1 to a final sum
+  total2 = total2.split('').reduce( (acc, cur) => acc+Number(cur),0) // combine total2 to a final sum
+  return total1-total2 // return difference
+}
+*/
+
+/*
+Fun with ES6 Classes #2 - Animals and Inheritance
+class Shark extends Animal {
+  constructor(name, age, status) {
+    super()
+    this.name = name
+    this.age = age
+    this.status = status
+    this.legs = 0
+    this.species = "shark"
+  }
+}
+
+class Cat extends Animal {
+  constructor(name, age, status){
+    super()
+    this.name = name
+    this.age = age
+    this.status = status
+    this.legs = 4
+    this.species = "cat"
+  }
+    introduce(){
+      return `Hello, my name is ${this.name} and I am ${this.age} years old.  Meow meow!`
+    }
+}
+class Dog extends Animal {
+  constructor(name, age, status, master){
+    super()
+    this.name = name
+    this.age = age
+    this.status = status
+    this.master = master
+    this.legs = 4
+    this.species = "dog"
+  }
+  greetMaster(){
+    return `Hello ${this.master}`
+  }
+}
+*/
+
+/*
+Return the missing element
+function getMissingElement(superImportantArray){
+  for(let i = 0; i < 10; i++){
+    if(!superImportantArray.includes(i)){
+       return i
+    }
+  }
+}
+*/
