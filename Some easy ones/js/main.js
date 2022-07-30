@@ -1426,3 +1426,13 @@ function getMissingElement(superImportantArray){
   }
 }
 */
+
+/*
+UEFA Euro 2016
+function uefaEuro2016(teams, scores){
+  const winner = scores[0] == scores[1] ? 
+    "teams played draw." : 
+    `${teams[scores.indexOf(Math.max(...scores))]} won!`
+  return `At match ${teams[0]} - ${teams[1]}, ${winner}`
+}
+*/
