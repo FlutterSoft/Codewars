@@ -1436,3 +1436,25 @@ function uefaEuro2016(teams, scores){
   return `At match ${teams[0]} - ${teams[1]}, ${winner}`
 }
 */
+
+/*
+Balanced Number (Special Numbers Series #1 )
+function balancedNum(number)
+{
+    let left
+    let right
+    let arr = number.toString().split('')
+    if(arr.length % 2 == 0){
+      left = arr.slice(0, arr.length/2 -1)
+      right = arr.slice(arr.length/2 +1)
+    }
+    else{
+      left = arr.slice(0, Math.floor(arr.length / 2))
+      right = arr.slice(Math.floor(arr.length / 2 + 1))
+    }
+    return left.reduce( (acc, cur) => acc+Number(cur), 0) == right.reduce( (acc, cur) => acc+Number(cur), 0) ?
+      "Balanced" :
+      "Not Balanced"
+}
+
+*/
