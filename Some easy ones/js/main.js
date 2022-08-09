@@ -1458,3 +1458,38 @@ function balancedNum(number)
 }
 
 */
+
+/*
+Reverse Words
+Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+
+Examples
+
+"This is an example!" ==> "sihT si na !elpmaxe"
+"double  spaces"      ==> "elbuod  secaps"
+
+function reverseWords(str) {
+  str = str.split(' ')
+  str = str.map(word => word.split('').reverse().join(''))
+  return str.join(' ')
+}
+
+/*
+7-KYU Reversed Message
+
+Reverse a message so that the words and letters passed into it are made lower case and reversed. In addition, capitalise the first letter of the newly reversed words. If a number or symbol(!#,>) is now in the first position of the word, no capitalisation needs to occur.
+
+Example:
+
+reverseMessage('This is an example of a Reversed Message!');
+Returns: '!egassem Desrever A Fo Elpmaxe Na Si Siht'
+
+
+function reverseMessage(str) {
+  return str.split(' ').map(word => {
+    word = word.toLowerCase().split('').reverse().join('')
+    return word.slice(0,1).toUpperCase() + word.slice(1)
+  }).reverse().join(' ')
+}
+
+*/
