@@ -1510,3 +1510,33 @@ function isPowerOfTwo(n){
   }
 }
 */
+
+/*
+7kyu - Greatest Common Divisor
+function mygcd(x,y){
+  for(let i = Math.min(x,y); i > 0; i--){
+    if(x % i == 0 && y % i == 0){
+      return i
+    }
+  }
+}
+*/
+/*
+7kyu - Ordered Count of Characters
+const orderedCount = function (text) {
+  const arr = []
+  while(text.length > 0){
+    let currentLetter = text[0]
+    let toSearch = new RegExp(currentLetter, "g")
+    let currentArray = []
+    currentArray.push(currentLetter, text.match(toSearch).length)
+    text = text.replace(toSearch, '')
+    arr.push(currentArray)
+    if (!text.includes(text[0])){
+      text = text.slice(1)
+    } 
+  }
+  return arr
+}
+
+*/
