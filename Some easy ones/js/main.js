@@ -1493,3 +1493,20 @@ function reverseMessage(str) {
 }
 
 */
+/*
+7-Kyu
+function isPowerOfTwo(n){
+  if(n % 1 != 0 || n < 1){
+    return false
+  }
+  while(n > 1){
+    n /= 2
+  }
+  if(n % 1 == 0){
+    return true
+  }
+  else{
+    return false
+  }
+}
+*/
