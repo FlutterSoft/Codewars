@@ -1664,3 +1664,13 @@ function countLanguages(list) {
 }
 
 */
+
+
+/*
+7 kyu - Coding Meetup #6 - Higher-Order Functions Series - Can they code in the same language?
+function isSameLanguage(list) {
+  return list.every(dev => dev.language == list[0].language)
+}
+
+*/
+
