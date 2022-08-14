@@ -1597,3 +1597,70 @@ function solve(arr) {
   return arr
 }
 */
+
+
+/*
+7Kyu
+Coding Meetup #2 - Higher-Order Functions Series - Greet developers
+
+
+function greetDevelopers(list) {
+  list.forEach( obj => { 
+    obj.greeting = "Hi "+ obj.firstName + ", what do you like the most about " + obj.language + "?"
+  })
+  return list
+}
+*/
+
+/*
+7kyu Simple Fun #74: Growing Plant
+function growingPlant(upSpeed, downSpeed, desiredHeight) {
+  let currentHeight = 0 
+  let days = 0
+  while(currentHeight < desiredHeight){
+    days++
+    currentHeight += upSpeed
+    if(currentHeight >= desiredHeight){
+      return days
+    }
+    currentHeight -= downSpeed
+  }
+  return days
+}
+*/
+
+/*
+7kyu - Coding Meetup #3 - Higher-Order Functions Series - Is Ruby coming?
+function isRubyComing(list) {
+  return list.some( dev => dev.language == "Ruby")
+}
+*/
+
+
+/*
+7kyu - Coding Meetup #4 - Higher-Order Functions Series - Find the first Python developer
+
+function getFirstPython(list) {
+  let pyDevs = list.filter(dev => dev.language === "Python" )
+  if(pyDevs.length > 0){
+    return pyDevs[0].firstName + ', ' + pyDevs[0].country
+  }
+  else{
+    return "There will be no Python developers"
+  }
+}
+
+
+
+/*
+7 kyu - Coding Meetup #5 - Higher-Order Functions Series - Prepare the count of languages
+function countLanguages(list) {
+  let languages = new Set(list.map(dev => dev.language))
+  let langCount = {}
+  languages.forEach(lang => {
+    langCount = {...langCount, [lang]: list.filter(dev => dev.language == lang).length}
+  })
+  return langCount
+}
+
+*/
