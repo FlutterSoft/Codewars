@@ -1540,3 +1540,60 @@ const orderedCount = function (text) {
 }
 
 */
+
+/*
+7kyu - Unpacking Arguments
+function spread(func, args) {
+  return func(...args)
+}
+*/
+
+/*
+7kyu Odd-Even String Sort
+function sortMyString(S) {
+    const evenArr = []
+    const oddArr = []
+    for(let i = 0; i < S.length; i++){
+      if(i % 2 == 0){
+        evenArr.push(S[i])
+      }
+      else{
+        oddArr.push(S[i])
+      }
+    }
+    return `${evenArr.join('')} ${oddArr.join('')}`
+}
+*/
+
+/*
+7kyu - Alphabet Symmetry
+
+function solve(arr){  
+  const alphabet = "abcdefghijklmnopqrstuvwxyz"
+  let result = []
+  arr.forEach(word => {
+    let count = 0
+    for(let i = 0; i < word.length; i++){
+      if(alphabet.indexOf(word.substring(i, i+1).toLowerCase()) == i){
+        count += 1
+      }     
+    }
+    result.push(count)
+  })
+  return result
+};
+*/
+
+/*
+7kyu - Simple Remove Duplicates
+
+function solve(arr) {
+  for(let i = 0; i < arr.length; i++){
+    if(arr.filter( n => n == arr[i]).length > 1){
+      arr.splice(i, 1)
+      i--
+    }
+  }
+  return arr
+}
+*/
