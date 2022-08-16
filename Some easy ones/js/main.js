@@ -1684,3 +1684,11 @@ function min(arr, toReturn) {
 }
 
 */
+
+/*
+7kyu - Sum of all arguments
+
+function sum(...args) {
+  return [...args].reduce( (acc, cur) => acc+cur, 0)
+}
+*/
