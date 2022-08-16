@@ -1674,3 +1674,13 @@ function isSameLanguage(list) {
 
 */
 
+/*
+
+7kyu - Smallest value of an array
+
+function min(arr, toReturn) {
+  let sorted = [...arr].sort((a,b)=>a-b)
+  return toReturn === 'value' ? sorted[0] : arr.indexOf(sorted[0])
+}
+
+*/
