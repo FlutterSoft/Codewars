@@ -1692,3 +1692,15 @@ function sum(...args) {
   return [...args].reduce( (acc, cur) => acc+cur, 0)
 }
 */
+
+/*
+7kyu functional addition
+
+function add(n) {
+  return function(x){
+    return n+x
+  }
+}
+
+
+*/
