@@ -1807,3 +1807,13 @@ function evil(n) {
 }
 
 */
+
+/*
+Draw Stairs
+
+function drawStairs(n) {
+  const arr = [...Array(n)].map( (l, i) => ' '.repeat(i) + 'I')
+  return arr.join('\n')
+}
+
+*/
