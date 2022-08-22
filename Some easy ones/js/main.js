@@ -1704,3 +1704,65 @@ function add(n) {
 
 
 */
+
+
+/*
+Contamination #1 -String-
+
+function contamination(text, char){
+  return text.replace(/./g, char)
+}
+
+*/
+
+/*
+NBA full 48 minutes average
+
+
+function pointsPer48(ppg, mpg) {
+  return Number(((48/mpg) * ppg).toFixed(1)) || 0
+}
+
+*/
+
+/*
+ASCII Total
+
+function uniTotal (string) {
+  return [...string].reduce( (acc, cur) => acc + cur.charCodeAt(0) ,0)
+}
+*/
+
+
+/*
+pick a set of first elements
+
+
+function uniTotal (string) {
+  return [...string].reduce( (acc, cur) => acc + cur.charCodeAt(0) ,0)
+}
+
+*/
+
+/*
+pick a set of first elements
+function first(arr, n=1) {
+  return arr.slice(0, n)
+}
+
+*/
+
+
+/*
+
+They say that only the name is long enough to attract attention. They also said that only a simple Kata will have someone to solve it. This is a sadly story #1: Are they opposite?
+
+function isOpposite(s1,s2){
+  let o1 = s1.split('').map(letter => letter == letter.toLowerCase() ? letter.toUpperCase() : letter.toLowerCase())
+  if(o1.length <= 0){
+    return false
+  }
+  return (o1.join('') == s2)
+}
+
+*/
