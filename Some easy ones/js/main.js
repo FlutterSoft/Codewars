@@ -1817,3 +1817,27 @@ function drawStairs(n) {
 }
 
 */
+
+/*
+Fuel Calculator
+
+function fuelPrice(litres, pricePerLitre) {
+  let total = 0
+  if(litres >= 2 && litres < 4){
+    total = litres *= (pricePerLitre-0.05)
+  }
+  else if(litres >= 4 && litres < 6){
+    total = litres *= (pricePerLitre-0.10)
+  }
+  else if(litres >= 6 && litres < 8){
+    total = litres *= (pricePerLitre-0.15)
+  }
+  else if(litres >= 8 && litres < 10){
+    total = litres *= (pricePerLitre-0.20)
+  }
+  else if(litres >= 10){
+    total = litres *= (pricePerLitre-0.25)
+  }
+  return Number(total.toFixed(2))
+}
+*/
