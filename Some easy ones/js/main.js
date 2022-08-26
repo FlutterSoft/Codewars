@@ -1841,3 +1841,15 @@ function fuelPrice(litres, pricePerLitre) {
   return Number(total.toFixed(2))
 }
 */
+
+/*
+7kyu - esreveR
+reverse = function(array) {
+  console.log(array)
+  let reversed = []
+  for(let i = array.length-1; i >= 0; i--){
+    reversed.push(array[i])
+  }
+  return reversed
+}
+*/
