@@ -1872,3 +1872,42 @@ function ifChuckSaysSo(){
   return 1==2
 }
 */
+
+
+/*
+8 kyu - Simple Comparison?
+
+
+function add(a, b){
+	return a == b
+}
+*/
+
+
+/*
+
+8Kyu - Character Frequency
+
+function charFreq(message) {
+  let result = {}
+  for(const key of message){
+    if(key in result){
+      result[key] += 1
+    }
+    else{
+      result[key] = 1
+    }
+  }
+  return result
+}
+
+
+*/
+
+/*
+8kyu - Polish Alphabet
+
+function correctPolishLetters (string) {
+  return string.replace(/ą/g,"a").replace(/ć/g,"c").replace(/ę/g,"e").replace(/ł/g,"l").replace(/ń/g,"n").replace(/ó/g,"o").replace(/ś/g,"s").replace(/ź/g,"z").replace(/ż/g,"z");
+}
+*/
