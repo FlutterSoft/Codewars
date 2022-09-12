@@ -1954,3 +1954,12 @@ function typeValidation(variable, type) {
   return typeof(variable) == type
 }
 */
+
+/*
+8kyu - For Twins: 2. Math operations
+
+
+function iceBrickVolume(radius, bottleLength, rimLength) {
+  return (bottleLength-rimLength) * radius * radius * 2
+}
+*/
