@@ -1963,3 +1963,14 @@ function iceBrickVolume(radius, bottleLength, rimLength) {
   return (bottleLength-rimLength) * radius * radius * 2
 }
 */
+
+
+/*
+8kyu - Find the integral
+function integrate(coefficient, exponent) {
+  let newEx = exponent+1
+  let newCo = coefficient / newEx
+  return `${newCo}x^${newEx}`
+}
+
+*/
