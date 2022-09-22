@@ -1974,3 +1974,15 @@ function integrate(coefficient, exponent) {
 }
 
 */
+
+/*
+8kyu - Grasshopper - Terminal Game #1
+function Hero (name='Hero') {
+  this.name = name;
+  this.position = '00';
+  this.health = 100;
+  this.damage = 5;
+  this.experience = 0;
+}
+
+*/
