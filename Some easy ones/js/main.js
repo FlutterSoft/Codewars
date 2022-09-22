@@ -1985,4 +1985,37 @@ function Hero (name='Hero') {
   this.experience = 0;
 }
 
+
+*/
+
+/*
+8 - kyu - Training JS #9: loop statement --while and do..while
+
+function padIt(str,n){
+  let i = 0
+  while (i < n){
+    if(i % 2 == 0){
+      str = "*" + str
+    }
+    else{
+      str = str + "*"
+    }
+    i++
+  }
+  return str
+}
+*/
+
+/*
+8kyu- Ensure Question
+
+function ensureQuestion(s) {
+  if(s[s.length-1] == "?"){
+    return s
+  }
+  else{
+    return s+"?"
+  }
+}
+
 */
