@@ -2029,3 +2029,11 @@ function twoHighest(arr) {
   return [...new Set(arr)].sort( (a,b) => b-a).slice(0,2)
 }
 */
+
+/*
+8kyu - Did she say hallo?
+function validateHello(greetings) {
+  res =  /hello|ciao|salut|hallo|hola|ahoj|czesc/i.test(greetings) 
+  return res
+}
+*/
