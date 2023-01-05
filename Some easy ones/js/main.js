@@ -2047,3 +2047,18 @@ function none(arr, fun){
 }
 
 */
+
+
+/*
+Calculate Price Excluding VAT
+//return price without vat
+function excludingVatPrice(price){
+  if(price == 0){
+    return price
+  }
+  if(!price){
+    return -1
+  }
+  return Math.round((price/1.15) * 100) / 100
+}
+*/
